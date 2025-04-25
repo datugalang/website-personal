@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Datu Galang</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e1e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .blog-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 30px;
+    }
+
+    .blog-container h1 {
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 20px;
+      animation: slideDown 0.8s ease-out forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .blog-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .post {
+      background-color: #2d2d2d;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .post:nth-child(1) { animation-delay: 0.3s; }
+    .post:nth-child(2) { animation-delay: 0.5s; }
+    .post:nth-child(3) { animation-delay: 0.7s; }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .post:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(255, 165, 0, 0.3);
+    }
+
+    .post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    .post:hover img {
+      transform: scale(1.03);
+    }
+
+    .post h2 {
+      color: orange;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .post:hover h2 {
+      color: #ffa500;
+    }
+
+    .post p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+      transform: translateX(5px);
+      color: #ffd700;
+    }
+
+    @media (max-width: 768px) {
+      .blog-container {
+        padding: 30px 20px;
+      }
+
+      .post img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="blog-container">
+    <h1>Blog Terbaru</h1>
+
+    <div class="blog-posts">
+      <div class="post">
+        <img src="img/kaliandarimanaajanih.png" alt="Bukit">
+        <h2>📍Lombok Bukit Merese </h2>
+        <p>Kalian dari daerah mana aj nih? 
+          . 
+          . 
+          . 
+          @lombok_inside_
+          #lombokisland #lomboktrip #lombokexplore #lombok #lombokhits #merese</p>
+        <a class="read-more" href="https://www.instagram.com/reel/DH3BSsqJAZW/?igsh=YmI5dmhobTQyYm5s">Baca Selengkapnya →</a>
+      </div>
+
+      <div class="post">
+        <img src="img/airterjun1.png" alt="Air Terjun">
+        <h2>📍Lombok Air Terjun Benang Kelambu</h2>
+        <p>Satu kata buat tempat ini🫵
+          . 
+          . 
+          . 
+          . 
+          #travel #wisataindonesia #lombok #lombokexplore #lombokhits #benangkelambu</p>
+        <a class="read-more" href="#">Baca Selengkapnya →</a>
+      </div>
+
+      <div class="post">
+        <img src="img/pantaiselongbelanak.png" alt="Pantai">
+        <h2>📍Lombok Pantai Selong Belanak</h2>
+        <p>Spot Sunset paling favorit pokonnya ini 😌...
+          #selongbelanak#pantaiselongbelanak
+          #selongbelanakbeach#eksplorelombok
+          #lombokisland#lombokituindah#lombok
+          #lomboktrip#lomboktengah
+          #lombokindonesia#trip#travelling
+          #vibesofvisual#Vibes
+        </p>
+        <a class="read-more" href="https://www.instagram.com/reel/DIbmfjNTP4c/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Baca Selengkapnya →</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

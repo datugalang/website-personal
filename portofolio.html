@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Datu Galang</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #2a2a2a;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: orange;
+      border-left: 4px solid orange;
+      padding-left: 10px;
+      margin-bottom: 30px;
+      animation: slideInLeft 0.8s ease forwards;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .portfolio-item {
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    .portfolio-item:nth-child(1) {
+      animation-delay: 0.3s;
+    }
+
+    .portfolio-item:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .portfolio-item h3 {
+      color: #fff;
+      margin-bottom: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .portfolio-item h3:hover {
+      color: #ffd700;
+    }
+
+    .portfolio-item p {
+      color: #ccc;
+      margin-bottom: 5px;
+    }
+
+    .portfolio-item a {
+      color: orange;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .portfolio-item a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+      color: #ffa500;
+    }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item a:hover .icon {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="portfolio-item">
+      <h3>🎬 Instagram</h3>
+      <a href="https://www.instagram.com/datugalangbyuaj_?igsh=OXZ1d3FqMWltd2d5" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
+        Lihat di Instagram
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>🎥 TikTok</h3>
+      <a href="https://www.tiktok.com/@datugalangbyuaj_?_t=ZS-8voXGnQGuJD&_r=1" target="_blank">
+        <img src="https://th.bing.com/th/id/OIP.O7EYkRKA0FbD1eEj1lFspwHaHa?cb=iwc1&w=1001&h=1001&rs=1&pid=ImgDetMain" alt="TikTok" class="icon">
+        Lihat di Tiktok
+      </a>
+    </div>
+  </section>
+</body>
+</html>

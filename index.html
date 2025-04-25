@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortofolioDatuGalang</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease-in-out;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #1e1e1e;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #2d2d2d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      position: fixed;
+      height: 100vh;
+    }
+
+    .sidebar img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .sidebar img:hover {
+      transform: scale(1.1);
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .nav-links {
+      width: 100%;
+    }
+
+    .nav-links a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 10px 15px;
+      background-color: #444;
+      border-left: 4px solid transparent;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: #555;
+      border-left: 4px solid orange;
+    }
+
+    .social-icons {
+      margin-top: auto;
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .footer {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background-color: #2d2d2d;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .main-content img {
+      width: 320px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .main-content img:hover {
+      transform: scale(1.05);
+    }
+
+    .info {
+      max-width: 500px;
+      margin-left: 40px;
+    }
+
+    .info h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+
+    .info p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: transparent;
+      color: white;
+      padding: 10px 20px;
+      border: 1px solid orange;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: orange;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      .info {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .main-content img {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="img/profilme.png" alt="Profile">
+    <h2>DATU<br>Galang</h2>
+    <div class="nav-links">
+      <a href="#" class="active">About</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="resume.html">Resume</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons"> 
+      <a href="https://www.facebook.com/share/1MBJ1ArM5p/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/datugalangbyuaj_?igsh=OXZ1d3FqMWltd2d5" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@datugalangbyuaj_?_t=ZS-8voXGnQGuJD&_r=1" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+    </div>
+    
+    <p class="footer">© 2025 All rights reserved.</p>
+  </div>
+  <div class="main-content">
+    <img src="img/profilme.png" alt="Datu Galang">
+    <div class="info">
+      <p style="color: #aaa;">Content Creator</p>
+      <h1>Datu Galang</h1>
+      <p>Seorang content creator yang jatuh cinta pada perjalanan dan kehidupan yang tinggal di pulau indah Lombok. Lewat lensa kamera, aku bercerita tentang gaya hidup, petualangan, dan momen-momen kecil yang bermakna.</p>
+      <p>Buatku, setiap tempat punya cerita, dan setiap langkah adalah bagian dari perjalanan yang layak dibagikan. Yuk, ikut menelusuri jejakku—dari pantai, hutan, sampai sudut kota yang penuh kejutan 🌿📸✨</p>
+      <a class="btn" href="#">Download CV</a>
+    </div>
+  </div>
+</body>
+</html>
